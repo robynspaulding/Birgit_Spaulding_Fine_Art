@@ -80,9 +80,9 @@ export function ResumesIndex() {
                         <></>
                       ) : (
                         <>
-                          <Button variant="outline-secondary" onClick={() => handleShowResume(resume)}>
+                          <button className="button1" onClick={() => handleShowResume(resume)}>
                             Edit Info
-                          </Button>
+                          </button>
                         </>
                       )}
                     </Card.Body>

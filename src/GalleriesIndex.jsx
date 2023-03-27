@@ -105,9 +105,9 @@ export function GalleriesIndex() {
                       <Card.Text className="row justify-content-center">
                         {gallery.size}&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp; {gallery.price}
                       </Card.Text>
-                      <Button variant="outline-dark" onClick={() => handleShowZoom(gallery)}>
+                      <button className="button1" onClick={() => handleShowZoom(gallery)}>
                         View
-                      </Button>
+                      </button>
                       <br />
                       <br />
                       <br />
@@ -116,9 +116,9 @@ export function GalleriesIndex() {
                       ) : (
                         <>
                           <div className="row justify-content-center">
-                            <Button variant="outline-secondary" onClick={() => handleShowGallery(gallery)}>
+                            <button className="button1" onClick={() => handleShowGallery(gallery)}>
                               Edit Info
-                            </Button>
+                            </button>
                           </div>
                         </>
                       )}

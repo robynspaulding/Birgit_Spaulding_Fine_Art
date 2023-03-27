@@ -43,7 +43,9 @@ export function Login() {
         <div>
           Password: <input name="password" type="password" />
         </div>
-        <button type="submit">Login</button>
+        <button className="button1" type="submit">
+          Login
+        </button>
       </form>
     </div>
   );

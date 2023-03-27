@@ -11,53 +11,47 @@ export function GalleriesShow(props) {
   };
 
   return (
-    <div>
-      <h1>Title: {props.gallery.title}</h1>
+    <div id="gallery-show" className="row justify-content-center">
+      <h1 className="row justify-content-center">{props.gallery.title}</h1>
       <img className="modal_image" src={props.gallery.image} style={{ width: "18rem" }} />
-      <p>Size: {props.gallery.size}</p>
-      <p>Medium: {props.gallery.materials}</p>
-      <p>Description: {props.gallery.description}</p>
-      <p>Price: {props.gallery.price}</p>
+      <p className="row justify-content-center">
+        {props.gallery.size} | {props.gallery.materials} | {props.gallery.price} | {props.gallery.description}
+      </p>
 
       {localStorage.jwt === undefined ? (
         <></>
       ) : (
         <>
-          <h1>Edit Gallery Entry:</h1>
+          <h1>Edit Painting:</h1>
           <form onSubmit={handleSubmit}>
-            <div>Title</div>
             <div>
-              <input type="text" name="title" defaultValue={props.gallery.title} />
+              Title: |<input type="text" name="title" defaultValue={props.gallery.title} />
             </div>
-            {/* <div>Image URL</div>
-            <div>
+            {/* <div>Image URL:
               <input type="text" name="image" defaultValue={props.gallery.image} />
             </div> */}
-            <div>Materials</div>
             <div>
-              <input type="text" name="materials" defaultValue={props.gallery.materials} />
+              Materials: |<input type="text" name="materials" defaultValue={props.gallery.materials} />
             </div>
-            <div>Size:</div>
             <div>
-              <input type="text" name="size" defaultValue={props.gallery.size} />
+              Size: |<input type="text" name="size" defaultValue={props.gallery.size} />
             </div>
-            <div>Price</div>
             <div>
-              <input type="text" name="price" defaultValue={props.gallery.price} />
+              Price: |<input type="text" name="price" defaultValue={props.gallery.price} />
             </div>
-            <div>Description</div>
             <div>
-              <input type="text" name="description" defaultValue={props.gallery.description} />
+              Description: |<input type="text" name="description" defaultValue={props.gallery.description} />
             </div>
 
             <button className="btn btn-success" type="submit">
-              Update Entry
+              Update Painting
             </button>
           </form>
-          <br />
+          <p> </p>
+          <p> </p>
           <div>
             <button className="btn btn-danger" onClick={handleClick}>
-              Delete Gallery Entry
+              Delete Painting
             </button>
           </div>
         </>

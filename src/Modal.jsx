@@ -4,10 +4,13 @@ export function Modal(props) {
   if (props.show) {
     return (
       <div className="modal-background">
+        <br />
         <section className="modal-main">
+          <br />
+          <br />
           {props.children}
-          <button className="close" type="button" onClick={props.onClose}>
-            &#x2715;
+          <button style={{ color: "#6e694e" }} className="close" type="button" onClick={props.onClose}>
+            &#x2717;
           </button>
         </section>
       </div>

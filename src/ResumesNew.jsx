@@ -18,22 +18,27 @@ export function ResumesNew() {
 
   return (
     <div id="Resume-new">
+      <br />
       <form onSubmit={handleSubmit}>
-        <h2>Add to Press & Awards:</h2>
-        <div>
-          <div>Summary:</div>
-          <input type="text" name="summary" />
+        <div className="card" style={{ width: "18rem" }}>
+          <div className="card-body">
+            <h5 className="card-title">Add Event</h5>
+            <p className="card-text">
+              <div>
+                Summary of Event: <input type="text" name="summary" />
+              </div>
+              <div>
+                Date of Event: <input type="text" name="date" />
+              </div>
+              <div>
+                Event Website: <input type="text" name="url" />
+              </div>
+              <button className="button1" type="submit">
+                Add Item to Resume
+              </button>
+            </p>
+          </div>
         </div>
-        <div>
-          <div>Press Link/URL:</div>
-          <input type="text" name="url" />
-        </div>
-        <div>
-          <div>Date of Event:</div>
-          <input type="text" name="date" />
-        </div>
-
-        <button type="submit">Add Item to Resume</button>
       </form>
     </div>
   );

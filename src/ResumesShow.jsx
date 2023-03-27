@@ -14,12 +14,14 @@ export function ResumesShow(props) {
     <div>
       <p>{props.resume.summary}</p>
       <a href={props.resume.url}>Link to article </a>
-
+      <br />
+      <br />
+      <br />
       {localStorage.jwt === undefined ? (
         <></>
       ) : (
         <>
-          <h1>Edit Resume Entry:</h1>
+          <h1>Edit Event Info:</h1>
           <form onSubmit={handleSubmit}>
             <div>Summary</div>
             <div>
@@ -34,10 +36,15 @@ export function ResumesShow(props) {
               <input type="text" name="date" defaultValue={props.resume.date} />
             </div>
 
-            <button type="submit">Update Entry</button>
+            <button className="button1" type="submit">
+              Update Event Info
+            </button>
           </form>
+          <br />
           <div>
-            <button onClick={handleClick}>Delete resume Entry</button>
+            <button className="btn btn-danger" onClick={handleClick}>
+              Delete Event
+            </button>
           </div>
         </>
       )}
