@@ -108,9 +108,9 @@ export function GalleriesIndex() {
                       <button className="button1" onClick={() => handleShowZoom(gallery)}>
                         View
                       </button>
+
                       <br />
-                      <br />
-                      <br />
+
                       {localStorage.jwt === undefined ? (
                         <></>
                       ) : (

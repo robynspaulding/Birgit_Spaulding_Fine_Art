@@ -7,6 +7,10 @@ export function ImageZoom(props) {
         <p className="row justify-content-center">
           {props.gallery.size} | {props.gallery.materials} | {props.gallery.price}
         </p>
+        <p style={{ fontSize: "15px", textAlign: "right" }}>
+          If you are interested in purchasing a painting, <br />
+          please message Birgit via the Contact link
+        </p>
       </div>
     </div>
   );
