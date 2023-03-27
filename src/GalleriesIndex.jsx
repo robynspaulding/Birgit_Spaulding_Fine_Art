@@ -95,7 +95,7 @@ export function GalleriesIndex() {
             <div key={gallery.id}>
               {Array.from({ length: 1 }).map((_, idx) => (
                 <Col className="row justify-content-center">
-                  <Card style={{ width: "40rem" }}>
+                  <Card className="row justify-content-center" style={{ width: "40rem" }}>
                     <br />
                     <Card.Img variant="top" src={gallery.image} />
                     <Card.Body>

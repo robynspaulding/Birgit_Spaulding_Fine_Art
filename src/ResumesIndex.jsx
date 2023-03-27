@@ -58,39 +58,41 @@ export function ResumesIndex() {
     <div className="row justify-content-center" id="resumes-index">
       <br />
       <h3>Events</h3>
-      <Row s={1} md={2} className="g-4">
-        {resumes.map((resume) => (
-          <>
-            <div key={resume.id}>
-              {Array.from({ length: 1 }).map((_, idx) => (
-                <Col className="row justify-content-center">
-                  <Card style={{ width: "30rem" }}>
-                    <Card.Body>
-                      <Card.Title>{resume.summary}</Card.Title>
-                      <Card.Text>Date: {resume.date} </Card.Text>
-                      <a target="_blank" rel="noopener noreferrer" href={resume.url}>
-                        Link to external site
-                      </a>
-                      <br />
-                      <br />
-                      <br />
+      <Row s={0} md={1} className="g-4">
+        {resumes
+          .sort((a, b) => (a.id < b.id ? 1 : -1))
+          .map((resume) => (
+            <>
+              <div key={resume.id}>
+                {Array.from({ length: 1 }).map((_, idx) => (
+                  <Col className="row justify-content-center">
+                    <Card style={{ width: "30rem" }}>
+                      <Card.Body>
+                        <Card.Title>{resume.summary}</Card.Title>
+                        <Card.Text>Date: {resume.date} </Card.Text>
+                        <a target="_blank" rel="noopener noreferrer" href={resume.url}>
+                          Link to external site
+                        </a>
+                        <br />
+                        <br />
+                        <br />
 
-                      {localStorage.jwt === undefined ? (
-                        <></>
-                      ) : (
-                        <>
-                          <button className="button1" onClick={() => handleShowResume(resume)}>
-                            Edit Info
-                          </button>
-                        </>
-                      )}
-                    </Card.Body>
-                  </Card>
-                </Col>
-              ))}
-            </div>
-          </>
-        ))}
+                        {localStorage.jwt === undefined ? (
+                          <></>
+                        ) : (
+                          <>
+                            <button className="button1" onClick={() => handleShowResume(resume)}>
+                              Edit Info
+                            </button>
+                          </>
+                        )}
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                ))}
+              </div>
+            </>
+          ))}
       </Row>
 
       <Modal show={isResumesShowVisable} onClose={handleClose}>
