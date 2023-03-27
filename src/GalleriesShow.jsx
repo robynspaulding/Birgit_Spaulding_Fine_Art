@@ -27,6 +27,7 @@ export function GalleriesShow(props) {
             <div>
               Title: |<input type="text" name="title" defaultValue={props.gallery.title} />
             </div>
+            {/* __________________ Addin if asked ________________________ */}
             {/* <div>Image URL:
               <input type="text" name="image" defaultValue={props.gallery.image} />
             </div> */}

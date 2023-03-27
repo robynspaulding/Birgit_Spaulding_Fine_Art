@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { Row, Card, Col, Button } from "react-bootstrap";
 import { ResumesShow } from "./ResumesShow";
 import { Modal } from "./Modal";
-import { Link } from "react-router-dom";
 
 export function ResumesIndex() {
   const [resumes, setResumes] = useState([]);

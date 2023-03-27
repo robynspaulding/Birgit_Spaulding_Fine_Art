@@ -27,35 +27,6 @@ export function GalleriesNew() {
   return (
     <div id="gallery-new">
       <form onSubmit={handleSubmit}>
-        {/* <h2>Add an item to your Gallery:</h2>
-        <div>
-          <div>Title:</div>
-          <input type="text" name="title" />
-        </div>
-        <div>
-          <div>Image Upload:</div>
-          <input type="file" name="image" onChange={handleImage} />
-        </div>
-        <div>
-          <div>Materials used: </div>
-          <input type="text" name="materials" />
-        </div>
-        <div>
-          <div>Size:</div>
-          <input type="text" name="size" />
-        </div>
-        <div>
-          <div>Sale Price:</div>
-          <input type="text" name="price" />
-        </div>
-        <div>
-          <div>Description:</div>
-          <input name="description" placeholder="Item Description"></input>
-        </div>
-        <br />
-        <button className="button1" type="submit">
-          Add Item to Gallery
-        </button> */}
         <br />
         <div className="card" style={{ width: "18rem" }}>
           <div className="card-body">
