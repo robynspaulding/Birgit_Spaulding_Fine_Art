@@ -4,7 +4,7 @@ import profile from "./assets/images/Birgit.jpg";
 import { BiosShow } from "./BiosShow";
 import { Modal } from "./Modal";
 
-export function BiosIndex(props) {
+export function BiosIndex() {
   const [bios, setBios] = useState([]);
 
   const handleIndexBios = () => {

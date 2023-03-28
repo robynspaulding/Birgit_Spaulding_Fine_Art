@@ -80,9 +80,9 @@ export function Header() {
                     <a className="dropdown-item" href="/login">
                       Admin Login
                     </a>
-                    <a className="dropdown-item" href="/signup">
+                    {/* <a className="dropdown-item" href="/signup">
                       Signup
-                    </a>
+                    </a> */}
                   </>
                 ) : (
                   <>
