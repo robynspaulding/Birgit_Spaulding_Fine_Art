@@ -11,6 +11,7 @@ import { GalleriesNew } from "./GalleriesNew";
 import { ResumesIndex } from "./ResumesIndex";
 import { ResumesNew } from "./ResumesNew";
 import axios from "axios";
+import { Signup } from "./Signup";
 
 axios.defaults.baseURL =
   process.env.NODE_ENV === "development" ? "http://localhost:3000" : "https://artist-website-api.onrender.com/";
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Content />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/bios" element={<BiosIndex />} />
         <Route path="/galleries" element={<GalleriesIndex />} />
         <Route path="/galleries/new" element={<GalleriesNew />} />
