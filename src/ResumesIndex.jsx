@@ -94,7 +94,6 @@ export function ResumesIndex() {
             </>
           ))}
       </Row>
-
       <Modal show={isResumesShowVisable} onClose={handleClose}>
         <ResumesShow resume={currentResume} onUpdateResume={handleUpdateResume} onDestroyResume={handleDestroyResume} />
       </Modal>
