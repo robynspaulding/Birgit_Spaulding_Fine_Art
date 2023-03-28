@@ -2,12 +2,30 @@ import homeImage from "./assets/images/NewBrightonBeach.jpeg";
 export function HomePage() {
   return (
     <div id="homePage" className="row justify-content-center">
+      <br />
+      <h3> Impressionist Painter in Pastel </h3>
       <p></p>
       <img src={homeImage} style={{ width: "60%" }} />
       <p className="row justify-content-center">
         New Brighton Beach, Santa Cruz CA &nbsp;&nbsp;|&nbsp;&nbsp; Pastel &nbsp;&nbsp;|&nbsp;&nbsp; 11 x
         14&nbsp;&nbsp;|&nbsp;&nbsp; $750.00
       </p>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 }
