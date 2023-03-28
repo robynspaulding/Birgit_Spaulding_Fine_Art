@@ -8,7 +8,6 @@ export function HomePage() {
         New Brighton Beach, Santa Cruz CA &nbsp;&nbsp;|&nbsp;&nbsp; Pastel &nbsp;&nbsp;|&nbsp;&nbsp; 11 x
         14&nbsp;&nbsp;|&nbsp;&nbsp; $750.00
       </p>
-      <h3> Discover the Mesmerizing World of Pastels with Birgit Spaulding, Professional Pastel Painter!</h3>
     </div>
   );
 }
