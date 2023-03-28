@@ -8,8 +8,6 @@ export function BiosShow(props) {
 
   return (
     <div id="bio-show" className="row justify-content-center">
-      <p className="row justify-content-center">{props.bio.summary}</p>
-
       {localStorage.jwt === undefined ? (
         <></>
       ) : (
@@ -17,7 +15,8 @@ export function BiosShow(props) {
           <h1>Edit Bio:</h1>
           <form onSubmit={handleSubmit}>
             <div>
-              Summary: |<input type="text" name="summary" defaultValue={props.bio.summary} />
+              Summary: |
+              <textarea rows="20" cols="75" type="text" name="summary" defaultValue={props.bio.summary}></textarea>
             </div>
             <button className="btn btn-success" type="submit">
               Update Bio

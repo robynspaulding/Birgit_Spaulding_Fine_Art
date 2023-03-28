@@ -28,13 +28,13 @@ export function GalleriesNew() {
     <div id="gallery-new">
       <form onSubmit={handleSubmit}>
         <br />
-        <div className="card" style={{ width: "18rem" }}>
+        <div className="card" style={{ width: "40rem" }}>
           <div className="card-body">
             <h5 className="card-title text-center"> Add a Painting to the Gallery:</h5>
             <p className="card-text">
               <div>
                 Title:
-                <br /> <input type="text" name="title" />
+                <br /> <textarea cols="25" type="text" name="title"></textarea>
               </div>
               <div>
                 Image Updoad:
@@ -59,7 +59,7 @@ export function GalleriesNew() {
               <div>
                 Description (optional):
                 <br />
-                <input type="text" name="description" />
+                <textarea cols="75" type="text" name="description"></textarea>
               </div>
               <button className="button1" type="submit">
                 Add Item to Gallery

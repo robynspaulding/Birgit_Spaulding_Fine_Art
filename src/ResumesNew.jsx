@@ -20,12 +20,12 @@ export function ResumesNew() {
     <div id="Resume-new">
       <br />
       <form onSubmit={handleSubmit}>
-        <div className="card" style={{ width: "18rem" }}>
+        <div className="card" style={{ width: "40rem" }}>
           <div className="card-body">
             <h5 className="card-title">Add Event</h5>
             <p className="card-text">
               <div>
-                Summary of Event: <input type="text" name="summary" />
+                Summary of Event: <textarea rows="5" cols="75" type="text" name="summary"></textarea>
               </div>
               <div>
                 Date of Event: <input type="text" name="date" />

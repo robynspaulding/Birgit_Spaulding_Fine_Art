@@ -12,11 +12,6 @@ export function ResumesShow(props) {
 
   return (
     <div>
-      <p>{props.resume.summary}</p>
-      <a href={props.resume.url}>Link to article </a>
-      <br />
-      <br />
-      <br />
       {localStorage.jwt === undefined ? (
         <></>
       ) : (
@@ -25,25 +20,26 @@ export function ResumesShow(props) {
           <form onSubmit={handleSubmit}>
             <div>Summary</div>
             <div>
-              <input type="text" name="summary" defaultValue={props.resume.summary} />
+              <textarea cols="75" type="text" name="summary" defaultValue={props.resume.summary}></textarea>
             </div>
             <div>Link to Event site:</div>
             <div>
-              <input type="text" name="url" defaultValue={props.resume.url} />
+              <textarea cols="75" type="text" name="url" defaultValue={props.resume.url}></textarea>
             </div>
             <div>Date:</div>
             <div>
               <input type="text" name="date" defaultValue={props.resume.date} />
             </div>
-
-            <button className="button1" type="submit">
-              Update Event Info
-            </button>
+            <div className="text-center">
+              <button className="btn btn-success btn-lg" type="submit">
+                Update Event Info
+              </button>
+            </div>
           </form>
           <br />
           <div>
-            <button className="btn btn-danger" onClick={handleClick}>
-              Delete Event
+            <button className="btn btn-dark btn-sm" onClick={handleClick}>
+              Delete
             </button>
           </div>
         </>
