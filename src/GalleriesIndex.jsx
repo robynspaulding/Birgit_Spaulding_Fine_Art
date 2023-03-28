@@ -9,7 +9,7 @@ export function GalleriesIndex() {
   const [galleries, setGalleries] = useState([]);
 
   const handleIndexGalleries = () => {
-    axios.get("http://localhost:3000/galleries.json").then((response) => {
+    axios.get("galleries.json").then((response) => {
       console.log(response.data);
       setGalleries(response.data);
     });

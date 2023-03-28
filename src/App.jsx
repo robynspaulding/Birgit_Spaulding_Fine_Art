@@ -10,6 +10,10 @@ import "bootstrap/dist/js/bootstrap.bundle";
 import { GalleriesNew } from "./GalleriesNew";
 import { ResumesIndex } from "./ResumesIndex";
 import { ResumesNew } from "./ResumesNew";
+import axios from "axios";
+
+axios.defaults.baseURL =
+  process.env.NODE_ENV === "development" ? "http://localhost:3000" : "https://artist-website-api.onrender.com/";
 
 function App() {
   return (
