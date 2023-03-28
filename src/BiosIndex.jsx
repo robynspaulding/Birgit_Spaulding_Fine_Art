@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import profile from "./assets/images/Birgit.jpg";
 import { BiosShow } from "./BiosShow";
+import { Modal } from "./Modal";
 
 export function BiosIndex(props) {
   const [bios, setBios] = useState([]);
