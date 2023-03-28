@@ -1,4 +1,4 @@
-import homeImage from "/Users/robynspaulding/artist-website/birgit-spaulding-fine-arts/src/assets/images/pelicans.jpeg";
+import homeImage from "./assets/images/pelicans.jpeg";
 
 export function HomePage() {
   return (
