@@ -17,7 +17,7 @@ export function BiosShow(props) {
           <h1>Edit Bio:</h1>
           <form onSubmit={handleSubmit}>
             <div>
-              Summary: |<input type="text" name="materials" defaultValue={props.bio.summary} />
+              Summary: |<input type="text" name="summary" defaultValue={props.bio.summary} />
             </div>
             <button className="btn btn-success" type="submit">
               Update Bio
