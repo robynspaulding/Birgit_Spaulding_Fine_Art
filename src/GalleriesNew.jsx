@@ -47,6 +47,11 @@ export function GalleriesNew() {
                 <input type="text" name="materials" />
               </div>
               <div>
+                Size:
+                <br />
+                <input type="text" name="size" />
+              </div>
+              <div>
                 Price:
                 <br />
                 <input type="text" name="price" />
