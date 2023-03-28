@@ -9,7 +9,7 @@ export function GalleriesIndex() {
   const [galleries, setGalleries] = useState([]);
 
   const handleIndexGalleries = () => {
-    axios.get("http://localhost:3000/galleries.json").then((response) => {
+    axios.get("https://artist-website-api.com/galleries.json").then((response) => {
       console.log(response.data);
       setGalleries(response.data);
     });
@@ -33,7 +33,7 @@ export function GalleriesIndex() {
 
   const handleUpdateGallery = (id, params) => {
     console.log("handleUpdateGallery");
-    axios.patch(`http://localhost:3000/galleries/${id}.json`, params).then((response) => {
+    axios.patch(`https://artist-website-api.com/galleries/${id}.json`, params).then((response) => {
       setGalleries(
         galleries.map((gallery) => {
           if (gallery.id === response.data.id) {
@@ -49,7 +49,7 @@ export function GalleriesIndex() {
 
   const handleDestroyGallery = (gallery) => {
     console.log("handleDestroyGallery", gallery);
-    axios.delete(`http://localhost:3000/galleries/${gallery.id}.json`).then((response) => {
+    axios.delete(`https://artist-website-api.com//galleries/${gallery.id}.json`).then((response) => {
       setGalleries(galleries.filter((g) => g.id !== gallery.id));
       handleClose();
     });

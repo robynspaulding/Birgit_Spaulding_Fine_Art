@@ -8,7 +8,7 @@ export function ResumesIndex() {
   const [resumes, setResumes] = useState([]);
 
   const handleIndexResumes = () => {
-    axios.get("http://localhost:3000/resumes.json").then((response) => {
+    axios.get("https://artist-website-api.com/resumes.json").then((response) => {
       console.log(response.data);
       setResumes(response.data);
     });
@@ -32,7 +32,7 @@ export function ResumesIndex() {
 
   const handleUpdateResume = (id, params) => {
     console.log("handleUpdateResume");
-    axios.patch(`http://localhost:3000/resumes/${id}.json`, params).then((response) => {
+    axios.patch(`https://artist-website-api.com/resumes/${id}.json`, params).then((response) => {
       setResumes(
         resumes.map((resume) => {
           if (resume.id === response.data.id) {
@@ -48,7 +48,7 @@ export function ResumesIndex() {
 
   const handleDestroyResume = (resume) => {
     console.log("handleDestroyResume", resume);
-    axios.delete(`http://localhost:3000/resumes/${resume.id}.json`).then((response) => {
+    axios.delete(`https://artist-website-api.com/resumes/${resume.id}.json`).then((response) => {
       setResumes(resumes.filter((r) => r.id !== resume.id));
       handleClose();
     });

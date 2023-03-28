@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { Login } from "./Login";
-import { LogoutLink } from "./LogoutLink";
 import { Content } from "./Content";
 import { BiosIndex } from "./BiosIndex";
 import { GalleriesIndex } from "./GalleriesIndex";
