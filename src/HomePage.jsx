@@ -1,28 +1,22 @@
-import homeImage from "./assets/images/NewBrightonBeach.jpeg";
+import homeImage from "/Users/robynspaulding/artist-website/birgit-spaulding-fine-arts/src/assets/images/pelicans.jpeg";
+
 export function HomePage() {
   return (
     <div id="homePage" className="row justify-content-center">
       <br />
       <p></p>
-      <div style={{ display: "flex", alignItems: "center" }}>
-        <div style={{ flex: 1, backgroundColor: "#787255", height: "3px" }} />
-
-        <h3 style={{ margin: "0 10px" }}>Impressionist Painter in Pastel</h3>
-
-        <div style={{ flex: 1, backgroundColor: "#787255", height: "3px" }} />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-      </div>
-      <br />
-      <br />
-      <img src={homeImage} style={{ width: "60%" }} />
+      <img src={homeImage} style={{ width: "60%" }} alt="image" />
       <p className="row justify-content-center">
-        New Brighton Beach, Santa Cruz CA &nbsp;&nbsp;|&nbsp;&nbsp; Pastel &nbsp;&nbsp;|&nbsp;&nbsp; 11 x
-        14&nbsp;&nbsp;|&nbsp;&nbsp; $750.00
+        Pelicans in Cypress Trees &nbsp;&nbsp;|&nbsp;&nbsp; Pastel &nbsp;&nbsp;|&nbsp;&nbsp; 11 x
+        14&nbsp;&nbsp;|&nbsp;&nbsp; $650.00
       </p>
+      <div style={{ display: "flex", alignItems: "center", marginTop: "-200px" }}>
+        <div style={{ flex: 1, backgroundColor: "#787255", height: "3px" }} />
+
+        <p style={{ fontSize: "45px", margin: "0 25px" }}>Impressionist Painter in Pastel</p>
+
+        <div style={{ flex: 1, backgroundColor: "#787255", height: "3px" }} />
+      </div>
       <br />
       <br />
       <br />

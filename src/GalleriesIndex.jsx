@@ -88,7 +88,7 @@ export function GalleriesIndex() {
       <h3 className="row justify-content-center">Gallery</h3>
       <br />
 
-      <Row s={1} md={2} className="g-4">
+      <Row s={2} md={3} className="g-4">
         {galleries
           .sort((a, b) => (a.id < b.id ? 1 : -1))
           .map((gallery) => (
