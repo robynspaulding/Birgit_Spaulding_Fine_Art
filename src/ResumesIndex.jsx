@@ -48,7 +48,7 @@ export function ResumesIndex() {
 
   const handleDestroyResume = (resume) => {
     console.log("handleDestroyResume", resume);
-    axios.delete(`http://localhost:3000/resumes/${resume.id}.json`).then((response) => {
+    axios.delete(`resumes/${resume.id}.json`).then((response) => {
       setResumes(resumes.filter((r) => r.id !== resume.id));
       handleClose();
     });

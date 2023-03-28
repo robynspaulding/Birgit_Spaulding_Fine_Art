@@ -5,7 +5,7 @@ export function BiosIndex(props) {
   const [bios, setBios] = useState([]);
 
   const handleIndexBios = () => {
-    axios.get("https://localhost:3000/bios.json").then((response) => {
+    axios.get("bios.json").then((response) => {
       console.log(response.data);
       setBios(response.data);
     });
