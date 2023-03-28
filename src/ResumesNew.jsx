@@ -2,7 +2,7 @@ import axios from "axios";
 
 export function ResumesNew() {
   const handleCreateResume = (params) => {
-    axios.post("http://localhost:3000/resumes.json", params).then((response) => {
+    axios.post("resumes.json", params).then((response) => {
       const newResume = response.data;
       console.log("New Resume item added", newResume);
       window.location.href = "/";

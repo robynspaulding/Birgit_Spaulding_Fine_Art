@@ -9,7 +9,7 @@ export function GalleriesNew() {
     setImage(e.target.files[0]);
   }
   const handleCreateGallery = (params) => {
-    axios.post("http://localhost:3000/galleries.json", params).then((response) => {
+    axios.post("galleries.json", params).then((response) => {
       const newGallery = response.data;
       console.log("New Gallery item added", newGallery);
       window.location.href = "/galleries";

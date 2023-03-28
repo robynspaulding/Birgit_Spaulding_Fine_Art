@@ -33,7 +33,7 @@ export function GalleriesIndex() {
 
   const handleUpdateGallery = (id, params) => {
     console.log("handleUpdateGallery");
-    axios.patch(`http://localhost:3000/galleries/${id}.json`, params).then((response) => {
+    axios.patch(`galleries/${id}.json`, params).then((response) => {
       setGalleries(
         galleries.map((gallery) => {
           if (gallery.id === response.data.id) {
@@ -49,7 +49,7 @@ export function GalleriesIndex() {
 
   const handleDestroyGallery = (gallery) => {
     console.log("handleDestroyGallery", gallery);
-    axios.delete(`http://localhost:3000/galleries/${gallery.id}.json`).then((response) => {
+    axios.delete(`galleries/${gallery.id}.json`).then((response) => {
       setGalleries(galleries.filter((g) => g.id !== gallery.id));
       handleClose();
     });

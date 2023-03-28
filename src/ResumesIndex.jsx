@@ -8,7 +8,7 @@ export function ResumesIndex() {
   const [resumes, setResumes] = useState([]);
 
   const handleIndexResumes = () => {
-    axios.get("http://localhost:3000/resumes.json").then((response) => {
+    axios.get("resumes.json").then((response) => {
       console.log(response.data);
       setResumes(response.data);
     });
@@ -32,7 +32,7 @@ export function ResumesIndex() {
 
   const handleUpdateResume = (id, params) => {
     console.log("handleUpdateResume");
-    axios.patch(`http://localhost:3000/resumes/${id}.json`, params).then((response) => {
+    axios.patch(`resumes/${id}.json`, params).then((response) => {
       setResumes(
         resumes.map((resume) => {
           if (resume.id === response.data.id) {
