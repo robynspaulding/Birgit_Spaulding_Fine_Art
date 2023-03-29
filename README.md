@@ -7,7 +7,7 @@ This is the front end for a professional artist website. I created this frontend
 
 # Technology used:
 - <a href="https://github.com/robynspaulding/where_to_next_react_frontend">React frontend</a>
-- <a href="https://github.com/robynspaulding/where_to_next_api">Ruby on Rails backend </a>
+- <a href="https://github.com/robynspaulding/artist-website-api">Ruby on Rails backend </a>
 - <a href="https://reactrouter.com/en/main"> React Router </a>
 - <a href="https://react-bootstrap.github.io/getting-started/introduction/">React Bootstrap </a>
 
