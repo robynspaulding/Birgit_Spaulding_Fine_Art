@@ -3,7 +3,7 @@ React.js Frontend
 
 This is the front end for a professional artist website. I created this frontend with client input for style and colors, which can all be customized in the index.css file. The goal for this site is to allow an artist to showcase their work by adding/editing images with the details and prices of each piece, list their past and future events, and allow patrons to contact the artist via email. The site is designed with only a login page rendered, but a signup to add users can be easily implemented by uncommenting the link in the Header.jsx file. This way patrons cannot access the add and edit features. 
 
-<img src=""> <img src="">
+<img src="gallery.png"> <img src="contact.png">
 
 # Technology used:
 - <a href="https://github.com/robynspaulding/where_to_next_react_frontend">React frontend</a>
